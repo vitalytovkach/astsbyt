@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Показания — АЭСК</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Unbounded:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body data-page="readings">
+  <header id="site-header"></header>
+  <main class="wrap">
+    <div class="page-hero">
+      <div class="kicker">Счётчик</div>
+      <h1>Передать показания</h1>
+      <p class="muted">До 25-го числа включительно показания входят в текущий месяц. Позже — в следующий. Если не передать, посчитают среднее за полгода.</p>
+    </div>
+    <div class="cards-2" style="margin: 28px 0 48px">
+      <form class="panel" id="readings-form">
+        <p class="note">Учебная форма. Данные останутся в вашем браузере и не попадут в АЭСК.</p>
+        <div class="form-row">
+          <label>Лицевой счёт<input name="account" required inputmode="numeric" placeholder="например 123456789"></label>
+          <label>Номер счётчика<input name="meter" required placeholder="с панели прибора"></label>
+        </div>
+        <div class="form-row">
+          <label>Показание, кВт·ч<input name="value" required inputmode="decimal" placeholder="004582"></label>
+          <label>Телефон<input name="phone" required placeholder="+7 900 000-00-00"></label>
+        </div>
+        <label>Месяц
+          <select name="month" required>
+            <option value="">Выберите</option>
+            <option>Ноябрь 2026</option>
+            <option>Декабрь 2026</option>
+          </select>
+        </label>
+        <p class="error" role="alert"></p>
+        <p class="success" hidden></p>
+        <button class="btn" type="submit">Сохранить показания</button>
+      </form>
+      <aside class="card">
+        <h3>Другие способы</h3>
+        <p><strong>Кабинет.</strong> <a href="https://lk.astrc.ru/" target="_blank" rel="noreferrer">lk.astrc.ru</a></p>
+        <p><strong>Офис МРЦ.</strong> г. Астрахань, ул. Зелёная, 29</p>
+        <p><strong>Телефон.</strong> <a href="tel:+78512248000">8 (8512) 248-000</a>, круглосуточно</p>
+        <p class="muted">Называйте цифры до запятой, без нулей слева только если так просит оператор. Зоны «день» и «ночь» передают отдельно, если счётчик двухтарифный.</p>
+      </aside>
+    </div>
+  </main>
+  <footer id="site-footer"></footer>
+  <script src="js/main.js"></script>
+</body>
+</html>

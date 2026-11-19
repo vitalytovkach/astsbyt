@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Заявление — АЭСК</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Unbounded:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body data-page="apply">
+  <header id="site-header"></header>
+  <main class="wrap">
+    <div class="page-hero">
+      <div class="kicker">Обращение</div>
+      <h1>Отправить заявление</h1>
+      <p class="muted">Тема, текст и контакты. На официальном сайте к форме прикладывают сканы. Здесь файл не загружается на сервер.</p>
+    </div>
+    <form class="panel" id="apply-form" style="margin: 28px 0 56px; max-width: 760px">
+      <p class="note">Черновик хранится локально в браузере. Чтобы заявление дошло до компании, используйте astsbyt.ru или почту secr@astsbyt.ru.</p>
+      <div class="form-row">
+        <label>Имя<input name="name" required placeholder="Как к вам обращаться"></label>
+        <label>Телефон<input name="phone" required placeholder="+7"></label>
+      </div>
+      <div class="form-row">
+        <label>Эл. почта<input name="email" type="email" required placeholder="name@mail.ru"></label>
+        <label>Лицевой счёт<input name="account" placeholder="если есть"></label>
+      </div>
+      <label>Тема
+        <select name="topic" required>
+          <option value="">Выберите</option>
+          <option>Электронная квитанция</option>
+          <option>Подтверждение электроотопления</option>
+          <option>Завышенная плата</option>
+          <option>Перерасчёт</option>
+          <option>Другое</option>
+        </select>
+      </label>
+      <label>Адрес объекта<input name="address" required placeholder="Населённый пункт, улица, дом, квартира"></label>
+      <label>Текст заявления<textarea name="message" required placeholder="Что произошло и чего вы ждёте"></textarea></label>
+      <label>Документ<input name="file" type="file"></label>
+      <p class="error" role="alert"></p>
+      <p class="success" hidden></p>
+      <button class="btn" type="submit">Сохранить черновик</button>
+    </form>
+  </main>
+  <footer id="site-footer"></footer>
+  <script src="js/main.js"></script>
+</body>
+</html>
