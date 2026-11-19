@@ -11,7 +11,7 @@ const pages = [
 const page = document.body.dataset.page || "home";
 
 function iconBolt() {
-  return `<svg class="brand-mark" viewBox="0 0 72 32" fill="none" aria-hidden="true"><path d="M1 14V8H8V2h8v6h8V2h8v6h8V2h8v6h8V2h8v6h6V14" stroke="currentColor" stroke-width="1.8" stroke-linejoin="miter"/><path d="M1 21c4-4 8-4 12 0s8 4 12 0 8-4 12-4 8 0 12 4 8 4 12 0 8-4 11-4" stroke="#3eb5f1" stroke-width="1.7" stroke-linecap="round"/><path d="M1 28c4-4 8-4 12 0s8 4 12 0 8-4 12-4 8 0 12 4 8 4 12 0 8-4 11-4" stroke="#009fe3" stroke-width="1.7" stroke-linecap="round"/></svg>`;
+  return `<svg viewBox="0 0 32 32" fill="none" aria-hidden="true"><path d="M18 3 7 18h8l-1 11 11-16h-8l1-10Z" fill="#F6C56B"/></svg>`;
 }
 
 const header = document.getElementById("site-header");
